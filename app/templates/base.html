@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsBuzz </title>
+</head>
+<body>
+    <div class="container">
+      
+        <section>
+            <div class="source-wrapper">
+                <i class='bx bxs-news source-icon'></i>
+                <h2 class="source-title">News source</h2>  
+            </div>
+            {% block sources %}
+            {% endblock %}
+        </section>
+        <main>
+            <header><h1><a href="/home" class="main-title">The Daily News</a></h1></header>
+            <nav>
+                <div class="logo">
+                    <a href="/home" class="nav-link">HOME</a>
+                </div>
+                <ul class="nav-items">
+                    <li class="nav-item"><a href="/categories/Business" class="nav-link">Business</a></li>
+                    <li class="nav-item"><a href="/categories/Technology" class="nav-link">Technology</a></li>
+                    <li class="nav-item"><a href="/categories/Science" class="nav-link">Science</a></li>
+                    <li class="nav-item"><a href="/categories/Entertainment" class="nav-link">Entertainment</a></li>
+                    <li class="nav-item"><a href="/categories/Sports" class="nav-link">Sports</a></li>
+                </ul>
+            </nav>
+            {% block content %}
+            {% endblock %}
+        </main>
+    </div>
+    
+    
+</body>
+</html>
+
+sources="news-com-au,al-jazeera-english,associated-press,the-washington-post,the-hill,bbc-news,engadget,techcrunch", page_size=60

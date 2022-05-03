@@ -1,14 +1,15 @@
 from flask import render_template
-from app import app
+# import main
+from app import app 
+from .request import get_all_articles
+# from models import Article
 
-@app.route("/")
+@app.route('/')
+@app.route('/index')
 def index():
+    articles = get_all_articles()
+    print(articles)
+    return render_template('index.html', articles=articles )
 
-    title = "Home - Welcome to the best News website online!"
 
-    return render_template('home.html', title = title)
 
-@app.route("/categories/<category>")
-def categories(categories):
-
-    return render_template("categories.html")

@@ -1,0 +1,21 @@
+{%block content%}
+<section class="news">
+  <ul>
+    {% for article in articles %}
+    <li>
+      <div class="image">
+        <img src="{{ article.urlToImage }}" alt="" />
+      </div>
+      <div class="description">
+        <h3>
+          <a href="{{ article.url }}" target="_blank">{{ article.title }}</a>
+        </h3>
+        <p>{{ article.description }}</p>
+        <p>{{ article.publishedAt }}</p>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endblock %}
+
