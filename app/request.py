@@ -56,36 +56,36 @@ def process_articles_results(articles_list):
 
     return articles_results
 
-# def get_all_sources():
-#     get_sources_url = 'https://newsapi.org/v2/top-headlines/sources?apiKey=4a6f270476a3464092781657cfcaa274'
+def get_all_sources():
+    get_sources_url = 'https://newsapi.org/v2/top-headlines/sources?apiKey=4a6f270476a3464092781657cfcaa274'
 
-#     with urllib.request.urlopen(get_sources_url) as url:
-#         get_sources_data = url.read()
-#         get_sources_response = json.loads(get_sources_data)
+    with urllib.request.urlopen(get_sources_url) as url:
+        get_sources_data = url.read()
+        get_sources_response = json.loads(get_sources_data)
 
-#         sources_results = None
+        sources_results = None
 
-#         if get_sources_response['sources']:
-#             sources_results_list = get_sources_response['sources']
-#             sources_results = process_articles_results(sources_results_list)
+        if get_sources_response['sources']:
+            sources_results_list = get_sources_response['sources']
+            sources_results = process_articles_results(sources_results_list)
 
 
-#     return sources_results
+    return sources_results
 
-# def process_sources_results(sources_list):
-#     sources_results = []
+def process_sources_results(sources_list):
+    sources_results = []
 
-#     for source in sources_list:
-#         id = source.get('id')
-#         name = source.get('name')
-#         description = source.get('description')
-#         url = source.get('url')
-#         category = source.get('category')
-#         country = source.get('country')
-#         language = source.get('language')
+    for source in sources_list:
+        id = source.get('id')
+        name = source.get('name')
+        description = source.get('description')
+        url = source.get('url')
+        category = source.get('category')
+        country = source.get('country')
+        language = source.get('language')
 
-#         if url:
-#             new_source = Sources(id,description,url,category,country,language)
-#             sources_results.append(new_source)
+        if url:
+            new_source = Sources(id,description,url,category,country,language)
+            sources_results.append(new_source)
 
-#         return sources_results
+        return sources_results
