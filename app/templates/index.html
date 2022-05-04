@@ -12,28 +12,28 @@
     <h1 class="font">The NewsBuzz</h1>
     <p class="hero-text ">The Home of News</p>
   </div>
-  <section class="sources">
-    <ul>
+  <section>
+    <ul class="sources">
       {%for source in sources%}
-      <li>
-        <!-- <div>
-          <h3>hello source 1</h3>
-        </div> -->
-        <div>
-          <p class="source-name">{{ source.name }}</p>
-        </div>
-        <div>
-          <p class="source-description">{{source.description}}</p>
-        </div>
-        <div>
-          <p class="category">{{source.category}}</p>
-        </div>
-      </li>
+      <div class="source-item">
+        <li>
+          <div>
+            <p class="source-name">{{ source.name }}</p>
+          </div>
+          <div>
+            <p class="source-description">{{source.description}}</p>
+          </div>
+          <div>
+            <p class="category">Category: {{source.category}}</p>
+          </div>
+        </li>
+      </div>
+      
       {% endfor %}
     </ul>
   </section>
   {% endblock %}
-  {% block content %}
+  {% block sources %}
   <section class="">
     <ul class="articles">
       {% for article in articles %}
