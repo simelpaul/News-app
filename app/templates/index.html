@@ -16,9 +16,9 @@
     <ul>
       {%for source in sources%}
       <li>
-        <div>
+        <!-- <div>
           <h3>hello source 1</h3>
-        </div>
+        </div> -->
         <div>
           <p class="source-name">{{ source.name }}</p>
         </div>
@@ -32,6 +32,8 @@
       {% endfor %}
     </ul>
   </section>
+  {% endblock %}
+  {% block content %}
   <section class="">
     <ul class="articles">
       {% for article in articles %}
