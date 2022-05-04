@@ -57,8 +57,7 @@ def get_all_sources():
 
         if get_sources_response['sources']:
             sources_results_list = get_sources_response['sources']
-            sources_results = process_articles_results(sources_results_list)
-
+            sources_results = process_sources_results(sources_results_list)
 
     return sources_results
 
@@ -74,8 +73,8 @@ def process_sources_results(sources_list):
         country = source.get('country')
         language = source.get('language')
 
-        if url:
+        if name:
             new_source = Sources(id,name,description,url,category,country,language)
             sources_results.append(new_source)
 
-        return sources_results
+    return sources_results

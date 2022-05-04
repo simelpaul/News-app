@@ -7,12 +7,14 @@ from .request import get_all_articles, get_all_sources
 @app.route('/')
 @app.route('/index')
 def index():
-    articles = get_all_articles()
     sources = get_all_sources()
-    return render_template('index.html', articles=articles, sources=sources)
+    articles = get_all_articles()
+    
+    print(sources)
+    return render_template('index.html', articles=articles, sources = sources)
 
 # @app.route('/')
-# @app.route('/sources')
+# @app.route('/index')
 # def sources():
 #     sources = get_all_sources()
 #     print(sources)
