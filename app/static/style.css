@@ -1,21 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 
-.body{
-    background-color: #4a1942;
-    width: 100%;
-    height: 100%;
-    
+.body {
+  background-color: #4a1942;
+  width: 100%;
+  height: 100%;
 }
-.hero-text{
-    color: #EAEAEA;
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    font-size: 4.5rem;
-    font-family: 'Zen Loop', cursive;
+.hero-text {
+  color: #eaeaea;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-size: 4.5rem;
+  font-family: 'Rock Salt', cursive;
 }
 
 .articles {
@@ -28,7 +28,6 @@
   height: 50vh;
   padding: 2rem;
   margin: auto;
-  
 }
 
 img {
@@ -40,48 +39,49 @@ img {
 li {
   list-style-type: none;
 }
-.article_item{
-    /* background-color: blue; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    height: 60vh;
-   
+.article_item {
+  /* background-color: blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 60vh;
 }
 
-.font{
-    font-family: 'Aclonica', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    font-size: 4rem;
-    color: #863168;
-
+.font {
+  font-family: "Aclonica", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-size: 4rem;
+  color: #863168;
 }
-.button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    margin-bottom: 1rem;
-    background-color: #863168;
-    color: #EAEAEA;
-    text-decoration: no-underline;
-
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 1rem;
+  background-color: #863168;
+  color: #eaeaea;
+  padding: 1rem;
+ 
 }
-.description{
-    background-color: #2E1C2B;
-    padding: 1rem;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    color: #EAEAEA;
-
-
+.description {
+  background-color: #2e1c2b;
+  padding: 1rem;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: #eaeaea;
+  
+}
+.date {
+  font-style: italic;
+  font-size: 1rem;
+}
+.description-text{
+    font-family: "Zen Loop", cursive;
     
-}
-.date{
-    font-style: italic;
-    font-size: 1rem;
+
 }
