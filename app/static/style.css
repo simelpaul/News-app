@@ -1,3 +1,87 @@
-.articles{
-    background-color: red;
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap');
+
+.body{
+    background-color: #4a1942;
+    width: 100%;
+    height: 100%;
+    
+}
+.hero-text{
+    color: #EAEAEA;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 4.5rem;
+    font-family: 'Zen Loop', cursive;
+}
+
+.articles {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 50vh;
+  padding: 2rem;
+  margin: auto;
+  
+}
+
+img {
+  width: 30vw;
+  height: 30vh;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+li {
+  list-style-type: none;
+}
+.article_item{
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 60vh;
+   
+}
+
+.font{
+    font-family: 'Aclonica', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 4rem;
+    color: #863168;
+
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 1rem;
+    background-color: #863168;
+    color: #EAEAEA;
+    text-decoration: no-underline;
+
+}
+.description{
+    background-color: #2E1C2B;
+    padding: 1rem;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: #EAEAEA;
+
+
+    
+}
+.date{
+    font-style: italic;
+    font-size: 1rem;
 }

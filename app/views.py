@@ -9,7 +9,6 @@ from .request import get_all_articles, get_all_sources
 def index():
     articles = get_all_articles()
     sources = get_all_sources()
-    print(articles)
     return render_template('index.html', articles=articles, sources=sources)
 
 # @app.route('/')
