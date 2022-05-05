@@ -40,9 +40,11 @@
       {% endfor %}
     </ul>
   </div>
-
+  
   <section>
+    <h1 class="header">Our Sources</h1>
     <ul class="sources">
+      
       {%for source in sources%}
       <div class="source-item">
         <li>
@@ -54,6 +56,9 @@
           </div>
           <div>
             <p class="category">Category: {{source.category}}</p>
+          </div>
+          <div>
+            <a href="{{source.url}}"><button class="source-btn">Visit Website</button></a>
           </div>
         </li>
       </div>
