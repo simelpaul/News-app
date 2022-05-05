@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Aclonica&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
 
 .body {
   background-color: #4a1942;
@@ -8,25 +8,27 @@
   height: 100%;
   padding: 1rem;
 }
+
+
 .hero-text {
   color: #eaeaea;
+  background-color: #4a1942;
   padding: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
   font-size: 3.5rem;
-  font-family: 'Rock Salt', cursive;
+  font-family: "Rock Salt", cursive;
 }
 
 .articles {
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-gap: 2.3rem;
+  grid-gap: 3rem;
   justify-content: center;
   align-items: center;
   width: 50vw;
-  height: 50vh;
   padding: 2rem;
   margin: auto;
 }
@@ -67,7 +69,6 @@ li {
   background-color: #863168;
   color: #eaeaea;
   padding: 0.5rem;
- 
 }
 .description {
   background-color: #2e1c2b;
@@ -75,40 +76,41 @@ li {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
   color: #eaeaea;
-  
 }
 .date {
   font-style: italic;
   font-size: 1rem;
 }
-.description-text{
-    font-family: "Zen Loop", cursive;
-    font-size: 1.3rem;
+.description-text {
+  font-family: "Zen Loop", cursive;
+  font-size: 1.3rem;
 }
-.sources{
+.sources {
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-gap: 2rem;
-  justify-content: center;
-  align-items: center;
-  width: 30vw;
-  height: 30vh;
-  padding: 1rem;
-  margin: auto;
+  grid-gap: 3rem;
+  background-color: #2e1c2b;
+  padding: 2rem;
 }
-.source-item{
-  display: flex;
+.source-item {
+  display: grid;
+  grid-template-columns: auto auto auto;
   justify-content: center;
   align-items: center;
   margin: auto;
   height: 20vh;
-
 }
-.source-name{
-  font-size: 2rem;
+.source-name {
+  font-size: 1rem;
   font-weight: 700;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Aclonica", sans-serif;
   color: #eaeaea;
-
-
 }
+.source-description{
+  color: #eaeaea;
+}
+.category{
+  color: #eaeaea;
+  font-family: "Rock Salt", cursive;
+}
+

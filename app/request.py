@@ -1,7 +1,7 @@
 import os
-import urllib.request, json
+import urllib.request, json, urllib
 from app.config import Config
-from .models import Article, Categories, Sources
+from .models import Article, Sources
 
 api_key = None
 base_url = None
@@ -12,7 +12,7 @@ def get_all_articles():
 
     # all_articles = newsapi.get_everything(q='bitcoin',sources='bbc-news,the-verge',domains='bbc.co.uk,techcrunch.com',from_param='2022-04-18',to='2022-05-03',language='en',sort_by='relevancy')
 
-    get_articles_url = 'https://newsapi.org/v2/everything?q=kenya&from=2022-05-03&to=2022-05-01&sortBy=popularity&language=en&apikey=4a6f270476a3464092781657cfcaa274'
+    get_articles_url = 'https://newsapi.org/v2/everything?q=kenya&from=2022-05-03&to=2022-05-01&sortBy=popularity&language=en&apikey=319a22ef8acc48d2a8bc83653dab0ed4'
 
     with urllib.request.urlopen(get_articles_url) as url:
         get_articles_data = url.read()
@@ -47,7 +47,7 @@ def process_articles_results(articles_list):
     return articles_results
 
 def get_all_sources():
-    get_sources_url = 'https://newsapi.org/v2/top-headlines/sources?apiKey=4a6f270476a3464092781657cfcaa274'
+    get_sources_url = 'https://newsapi.org/v2/top-headlines/sources?apiKey=319a22ef8acc48d2a8bc83653dab0ed4'
 
     with urllib.request.urlopen(get_sources_url) as url:
         get_sources_data = url.read()

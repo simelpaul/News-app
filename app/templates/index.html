@@ -6,35 +6,19 @@
   integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
   crossorigin="anonymous"
 />
-{% endblock %} {% block content %}
+{% endblock %} 
+
+{% block content %}
 <body class="body">
   <div>
     <h1 class="font">The NewsBuzz</h1>
     <p class="hero-text ">The Home of News</p>
   </div>
-  <section>
-    <ul class="sources">
-      {%for source in sources%}
-      <div class="source-item">
-        <li>
-          <div>
-            <p class="source-name">{{ source.name }}</p>
-          </div>
-          <div>
-            <p class="source-description">{{source.description}}</p>
-          </div>
-          <div>
-            <p class="category">Category: {{source.category}}</p>
-          </div>
-        </li>
-      </div>
-      
-      {% endfor %}
-    </ul>
-  </section>
-  {% endblock %}
-  {% block sources %}
-  <section class="">
+  
+  <!-- {% endblock %} -->
+
+  <!-- {% block sources %} -->
+  <div class="">
     <ul class="articles">
       {% for article in articles %}
       <div class="article_item">
@@ -53,6 +37,27 @@
           </div>
         </li>
       </div>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <section>
+    <ul class="sources">
+      {%for source in sources%}
+      <div class="source-item">
+        <li>
+          <div>
+            <p class="source-name">{{ source.name }}</p>
+          </div>
+          <div>
+            <p class="source-description">{{source.description}}</p>
+          </div>
+          <div>
+            <p class="category">Category: {{source.category}}</p>
+          </div>
+        </li>
+      </div>
+      
       {% endfor %}
     </ul>
   </section>
