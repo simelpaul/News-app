@@ -7,7 +7,10 @@ A simple app that allows the user to view news as they happen.
 Paul Simel
 
 ## Getting Started with NewsBuzz app
-To get a local copy to your machine.
+To get a local copy to your machine. 
+```
+hello
+```
 
 
 ### Technologies Used
