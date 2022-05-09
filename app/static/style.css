@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
 
 .body {
-  background-color: #4a1942;
+  background-color: #0d010b;
   width: 100%;
   height: 100%;
   padding: 1rem;
@@ -11,13 +11,13 @@
 
 .hero-text {
   color: #eaeaea;
-  background-color: #4a1942;
+  background-color: #5f4c02;
   padding: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
-  font-size: 3.5rem;
+  font-size: 3.0rem;
   font-family: "Rock Salt", cursive;
 }
 
